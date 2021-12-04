@@ -1,4 +1,4 @@
 public interface ItemEntity {
-    public String getTitle();
-    public String getFormatted();
+    String getTitle();
+    String getFormatted();
 }
