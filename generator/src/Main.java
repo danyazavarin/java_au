@@ -6,7 +6,6 @@ public class Main {
         String fileName = parts[parts.length-1];
         SolutionFile old = SolutionFile.parseFile(oldFileContent, FileType.MARKDOWN, fileName);
         old.add(MarkdownEntity.parseEntity(userSolutionContent));
-        String d = old.toString();
         return old.toString();
     }
     public static void main(String[] args) {
