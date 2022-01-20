@@ -12,6 +12,8 @@ https://leetcode.com/problems/squares-of-a-sorted-array/
 import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
+class SolutionTest {
+
     @Test
     void testSortedSquares() {
         int[] arr = new int[]{-3, -2, -1, 0, 1, 2, 3};
@@ -25,15 +27,18 @@ import java.util.Arrays;
         int expected = new int[]{1, 1, 0, 4, 4};
         Arrays.equals(expected, arr);
     }
+}
 ```
 </details>
 
 ```java
-public int[] sortedSquares(int[] nums) {
-    for(int i = 0; i < nums.length; i++){
-        nums[i] *= nums[i];
+class Solution {
+    public int[] sortedSquares(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] *= nums[i];
         }
-    Arrays.sort(nums);
-    return nums;
+        Arrays.sort(nums);
+        return nums;
+    }
 }
 ```
